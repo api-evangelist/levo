@@ -1,23 +1,73 @@
 aid: levo
+
 name: Levo
-description: 'Levo is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog) and
-  added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/68d0ca01084046ac052b0d8d/68e354afe74b7b9c68f91e54_d5889fa56eef309d6a1e006a97e83701_Levo%27s%20Open%20Graph%20Logo.svg
+
+description: 'Levo provides an AI‑powered API security platform that protects both traditional APIs and emerging AI‑driven services. The solution offers runtime visibility, threat detection, red‑teaming, and governance across the entire application stack, integrating with CI/CD pipelines and supporting compliance for industries such as banking, insurance, healthcare, and retail. Levo’s platform unifies API and AI security, delivering real‑time risk insights, automated policy enforcement, and detailed reporting to help organizations secure complex, dynamic micro‑service architectures and AI models.'
+
 url: https://raw.githubusercontent.com/api-evangelist/levo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Security
+- AI
+- API
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: TermsOfService
+  url: https://www.levo.ai/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.levo.ai/privacy-policy
+- type: GettingStarted
+  url: https://docs.levo.ai/quickstart
+- type: ChangeLog
+  url: changelog/levo-changelog.yml
+- type: Authentication
+  url: authentication/levo-authentication.yml
+- type: Hosts
+  url: hosts/levo-hosts.yml
+- type: Vendors
+  url: vendors/levo-vendors.yml
+- type: GitHubOrganization
+  url: https://github.com/levoai/
+- type: ChangeLog
+  url: https://docs.levo.ai/changelog
+- type: DomainSecurity
+  url: security/levo-domain-security.yml
 - type: Website
   url: https://levo.ai/
+- type: Documentation
+  url: https://www.levo.ai/
+- type: Blog
+  url: https://www.levo.ai/resources/blogs
+- type: Pricing
+  url: https://www.levo.ai/pricing
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

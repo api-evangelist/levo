@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.levo.ai/quickstart
+sources:
+- https://docs.levo.ai/quickstart
+- https://docs.levo.ai/quickstart/quickstart-mac
+- https://docs.levo.ai/quickstart/quickstart-kubernetes
+- https://docs.levo.ai/quickstart/quickstart-minikube
+description: Levo uses a Satellite authorization key for authentication.
+schemes:
+- type: apiKey
+  name: LEVOAI_AUTH_KEY
+  evidence: The Levo-all package uses an authorization key to access Levo.ai.
+note: The documentation does not specify whether the key is sent in a header, query parameter, or body.
+docs: https://docs.levo.ai/quickstart
